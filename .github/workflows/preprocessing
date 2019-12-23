@@ -1,0 +1,5 @@
+#[df에서 특정 값을 만족하는 칼럼명 출력하기]
+
+df.columns[(df == 38.15).iloc[0]]
+
+df.ix[:,df.loc[0] == 38.15].columns
